@@ -1,0 +1,121 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos EaD Faesa</title>
+    <style>
+        /* Estilos CSS podem ser adicionados aqui */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header, footer {
+            background-color: #004FD7;
+            color: #000000;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 10px;
+        }
+        h1, h2, h3 {
+            color: ##000000;
+        }
+        .courses {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .course {
+            flex: 1;
+            text-align: center;
+            margin: 0 10px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+        .course:hover {
+            transform: translateY(-5px);
+        }
+        .course img {
+            width: 200px;
+            height: 200px;
+            margin-bottom: 20px;
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+        .course img:hover {
+            transform: scale(1.1);
+        }
+        .course p {
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+        .contact-info {
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="{% static 'image/logomarca.jpg' %}" alt="Logomarca EaD Faesa">
+        <h1>Bem-vindo ao EaD Faesa</h1>
+    </header>
+    <div class="container">
+        <h2>Cursos</h2>
+        <div class="courses">
+            <div class="course">
+                <img src="{% static 'image/curso1.jpg' %}" alt="Tecnologia em Análise e Desenvolvimento de Sistemas">
+                <h3>Tecnologia em Análise e Desenvolvimento de Sistemas</h3>
+                <p>Tecnologia em Análise e Desenvolvimento de Sistemas é um curso dinâmico e abrangente que prepara os alunos para enfrentar os desafios complexos do mundo da tecnologia da informação. Com uma sólida base teórica aliada a experiências práticas, os estudantes mergulham no universo da análise de sistemas, aprendendo a desenhar, desenvolver e implementar soluções de software eficientes e inovadoras.</p>
+            </div>
+            <div class="course">
+                <img src="{% static 'image/curso2.jpg' %}" alt="Redes de Computadores">
+                <h3>Redes de Computadores</h3>
+                <br>
+                <p>O curso de Redes de Computadores da EaD Faesa é uma jornada emocionante para o mundo interconectado da tecnologia da informação. Neste curso, os alunos mergulham no fascinante universo das redes de computadores, explorando os fundamentos, protocolos e tecnologias que sustentam a comunicação digital moderna.</p>
+            </div>
+            <div class="course">
+                <img src="{% static 'image/curso3.jpg' %}" alt="Sistemas de Informação">
+                <h3>Sistemas de Informação</h3>
+                <br>
+                <p>O curso de Sistemas de Informação da EaD Faesa é uma jornada emocionante para o mundo da tecnologia aplicada aos negócios. Este curso combina habilidades técnicas com conhecimentos de negócios, preparando os alunos para projetar, desenvolver e gerenciar sistemas de informação que impulsionam o sucesso das organizações modernas.</p>
+            </div>
+        </div>
+        <div class="contact-info" style="background-color: #f9f9f9; padding: 20px; border-radius: 10px; box-shadow: 0 0 5px rgba(0,0,0,0.1);">
+            <h2 style="color: #333;">Contato</h2>
+            <p style="color: #333;">Para mais informações, entre em contato conosco:</p>
+            <p style="color: #333; font-weight: bold;">Telefone: (27) 3456-7891</p>
+            <p style="color: #333; font-weight: bold;">Email: <a href="mailto:contato@eadfaesa.com.br" style="color: #333; text-decoration: none;">contato@eadfaesa.com.br</a></p>
+        </div>
+    </div>
+    <footer style="background-color: #333; color: #fff; text-align: center; padding: 20px;">
+    <div>
+        <p>&copy; 2024 EaD Faesa - Todos os direitos reservados</p>
+    </div>
+    <div style="margin-top: 20px;">
+        <ul style="list-style: none; padding: 0;">
+            <li style="display: inline-block; margin-right: 10px;"><a href="#" style="text-decoration: none; color: #fff;">Política de Privacidade</a></li>
+            <li style="display: inline-block; margin-right: 10px;"><a href="#" style="text-decoration: none; color: #fff;">Termos de Uso</a></li>
+            <li style="display: inline-block;"><a href="#" style="text-decoration: none; color: #fff;">Contato</a></li>
+        </ul>
+    </div>
+</footer>
+</body>
+</html>
